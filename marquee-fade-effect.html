@@ -1,0 +1,588 @@
+<!doctype html>
+<html lang="en"> 
+ <head> 
+  <title>HTML TEMPLATE</title> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta charset="utf-8"> 
+  <link rel="shortcut icon" href="#"> 
+  <style type="text/css">
+          @import url('https://fonts.googleapis.com/css2?family=Pontano+Sans&display=swap');
+      *{
+        margin: 0;
+        padding: 0;
+        font-family: 'Pontano Sans', sans-serif;
+      }
+      .friendsblock {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                width: 836px;
+                                height: 249px;
+                                font-family: 'Abril Fatface', cursive;
+                                font-size: 8px;
+                                background: #001017;
+                                
+                                }
+                                .friendsblock .image-container{
+                                 /* overflow-x:hidden;  */
+                                  max-width: 768px;
+                                }
+                                .friendsblock .image-wrapper{
+                                  display: grid;
+                                  grid-auto-flow: column;
+                                  grid-wuto-columns: calc((100% - (1.5rem * (var(--per-view) - 1))) / var(--per-view));
+                                  grid-gap: 1.5rem;
+                                  position: relative;
+                                  left: 0;
+                                  transition: .3s;
+                                }
+                                .friendsblock .image-wrapper > *{
+                                  aspect-ratio: 4/3;
+                                }
+                                
+                                .hyolyn{
+                                  background-color: pink;
+                                  border: 1px solid black;
+                                  width: 63px;
+                                  height: 69px;
+                                  line-height: 20px;
+                                  font-size: 15px;
+                                  justify-content: center;
+                                  align-items: center;
+                                  text-align: center;
+                                  position: relative;
+                                  cursor: pointer;
+                                  margin: 0;
+                                }
+                                        .hyolyn a{
+          cursor: pointer;
+          background-color: transparent;
+          color: transparent;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+          width: 63px;
+          height: 69px;
+          }
+          .hyolyn:hover{
+            background-image: url(https://64.media.tumblr.com/696b264e455685a2e6af9b4054518aa5/2c4b457f9ae6eaa8-00/s75x75_c1/9964e5a16283ff003de8f86a3573816a0353ceb3.pnj);
+            background-color: transparent;
+            transition: 0.3s ease-in-out;
+            color: transparent;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            width: 63px;
+            height: 69px;
+            }
+            
+              .sikk{
+                                  background-color: pink;
+                                  border: 1px solid black;
+                                  width: 63px;
+                                  height: 69px;
+                                  line-height: 20px;
+                                  font-size: 15px;
+                                  justify-content: center;
+                                  align-items: center;
+                                  text-align: center;
+                                  position: relative;
+                                  cursor: pointer;
+                                  margin: 0;
+                                }
+                                        .sikk a{
+          cursor: pointer;
+          background-color: transparent;
+          color: transparent;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+          width: 63px;
+          height: 69px;
+          }
+          .sikk:hover{
+            background-image: url(https://64.media.tumblr.com/91ae55c1601dc11b727f564e364c1310/c045d28d972dd8e7-9e/s75x75_c1/1e0d87bbcfd69629673c8885a94cbefe30e6f516.pnj);
+            background-color: transparent;
+            transition: 0.3s ease-in-out;
+            color: transparent;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            width: 63px;
+            height: 69px;
+            }
+            
+            
+              .jvcki{
+                                  background-color: pink;
+                                  border: 1px solid black;
+                                  width: 63px;
+                                  height: 69px;
+                                  line-height: 20px;
+                                  font-size: 15px;
+                                  justify-content: center;
+                                  align-items: center;
+                                  text-align: center;
+                                  position: relative;
+                                  cursor: pointer;
+                                  margin: 0;
+                                }
+                                        .jvcki a{
+          cursor: pointer;
+          background-color: transparent;
+          color: transparent;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+          width: 63px;
+          height: 69px;
+          }
+          .jvcki:hover{
+            background-image: url(https://64.media.tumblr.com/57e5bf77899a306d7cfd3d74688c0d2f/c045d28d972dd8e7-00/s75x75_c1/60c5da05eafa93d04a9a0c3eefa98fdd61585ce6.pnj);
+            background-color: transparent;
+            transition: 0.3s ease-in-out;
+            color: transparent;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            width: 63px;
+            height: 69px;
+            }
+            
+            
+              .dayday{
+                                  background-color: pink;
+                                  border: 1px solid black;
+                                  width: 63px;
+                                  height: 69px;
+                                  line-height: 20px;
+                                  font-size: 15px;
+                                  justify-content: center;
+                                  align-items: center;
+                                  text-align: center;
+                                  position: relative;
+                                  cursor: pointer;
+                                  margin: 0;
+                                }
+                                        .dayday a{
+          cursor: pointer;
+          background-color: transparent;
+          color: transparent;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+          width: 63px;
+          height: 69px;
+          }
+          .dayday:hover{
+            background-image: url(https://64.media.tumblr.com/d15bd3cd181e34bc2dfa28890b90458a/c045d28d972dd8e7-9c/s75x75_c1/b651e190716da2455482f7075fba727d2b17dd49.pnj);
+            background-color: transparent;
+            transition: 0.3s ease-in-out;
+            color: transparent;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            width: 63px;
+            height: 69px;
+            }
+            
+            
+              .jessi{
+                                  background-color: pink;
+                                  border: 1px solid black;
+                                  width: 63px;
+                                  height: 69px;
+                                  line-height: 20px;
+                                  font-size: 15px;
+                                  justify-content: center;
+                                  align-items: center;
+                                  text-align: center;
+                                  position: relative;
+                                  cursor: pointer;
+                                  margin: 0;
+                                }
+                                        .jessi a{
+          cursor: pointer;
+          background-color: transparent;
+          color: transparent;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+          width: 63px;
+          height: 69px;
+          }
+          .jessi:hover{
+            background-image: url(https://64.media.tumblr.com/f7f9777ec2d049ff2d14be69d48d74de/c045d28d972dd8e7-ba/s75x75_c1/b4eb242840d50c8dd94c70f0c1bdf833d642607a.pnj);
+            background-color: transparent;
+            transition: 0.3s ease-in-out;
+            color: transparent;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            width: 63px;
+            height: 69px;
+            }
+            
+            
+              .nafla{
+                                  background-color: pink;
+                                  border: 1px solid black;
+                                  width: 63px;
+                                  height: 69px;
+                                  line-height: 20px;
+                                  font-size: 15px;
+                                  justify-content: center;
+                                  align-items: center;
+                                  text-align: center;
+                                  position: relative;
+                                  cursor: pointer;
+                                  margin: 0;
+                                }
+                                        .nafla a{
+          cursor: pointer;
+          background-color: transparent;
+          color: transparent;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+          width: 63px;
+          height: 69px;
+          }
+          .nafla:hover{
+            background-image: url(https://64.media.tumblr.com/ee91f2b5f75567ba3c2a09926b5966ce/c045d28d972dd8e7-4d/s75x75_c1/70e1edfb77c7e797587563c1c643ad41108200ad.pnj);
+            background-color: transparent;
+            transition: 0.3s ease-in-out;
+            color: transparent;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            width: 63px;
+            height: 69px;
+            }
+            
+           
+              .leehi{
+                                  background-color: pink;
+                                  border: 1px solid black;
+                                  width: 63px;
+                                  height: 69px;
+                                  line-height: 20px;
+                                  font-size: 15px;
+                                  justify-content: center;
+                                  align-items: center;
+                                  text-align: center;
+                                  position: relative;
+                                  cursor: pointer;
+                                  margin: 0;
+                                }
+                                        .leehi a{
+          cursor: pointer;
+          background-color: transparent;
+          color: transparent;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+          width: 63px;
+          height: 69px;
+          }
+          .leehi:hover{
+            background-image: url(https://64.media.tumblr.com/0d0d368f80cb56f8929677f93bc7af93/5216baedbbbe338e-24/s100x200/7b0e47e2252d963cde79b1989b1be3797c0a08a4.pnj);
+            background-color: transparent;
+            transition: 0.3s ease-in-out;
+            color: transparent;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            width: 63px;
+            height: 69px;
+            }
+            
+           
+              .hoody{
+                                  background-color: pink;
+                                  border: 1px solid black;
+                                  width: 63px;
+                                  height: 69px;
+                                  line-height: 20px;
+                                  font-size: 15px;
+                                  justify-content: center;
+                                  align-items: center;
+                                  text-align: center;
+                                  position: relative;
+                                  cursor: pointer;
+                                  margin: 0;
+                                }
+                                        .hoody a{
+          cursor: pointer;
+          background-color: transparent;
+          color: transparent;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+          width: 63px;
+          height: 69px;
+          }
+          .hoody:hover{
+            background-image: url(https://64.media.tumblr.com/9d26a1e1a76b1ce3e336c5b8a2c3522e/5216baedbbbe338e-55/s75x75_c1/98712122b78b222000fe086387c5dc051f9f891c.pnj);
+            background-color: transparent;
+            transition: 0.3s ease-in-out;
+            color: transparent;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            width: 63px;
+            height: 69px;
+            }
+            .sogumm{
+                                  background-color: pink;
+                                  border: 1px solid black;
+                                  width: 63px;
+                                  height: 69px;
+                                  line-height: 20px;
+                                  font-size: 15px;
+                                  justify-content: center;
+                                  align-items: center;
+                                  text-align: center;
+                                  position: relative;
+                                  cursor: pointer;
+                                  margin: 0;
+                                }
+                                        .sogumm a{
+          cursor: pointer;
+          background-color: transparent;
+          color: transparent;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+          width: 63px;
+          height: 69px;
+          }
+          .sogumm:hover{
+            background-image: url(https://64.media.tumblr.com/50431b74c934ff6609bae83ba920fcdf/5216baedbbbe338e-ea/s100x200/e996003cbd24e4c06eb916b78fd101e728abcae8.pnj);
+            background-color: transparent;
+            transition: 0.3s ease-in-out;
+            color: transparent;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            width: 63px;
+            height: 69px;
+            }
+            .coogie{
+                                  background-color: pink;
+                                  border: 1px solid black;
+                                  width: 63px;
+                                  height: 69px;
+                                  line-height: 20px;
+                                  font-size: 15px;
+                                  justify-content: center;
+                                  align-items: center;
+                                  text-align: center;
+                                  position: relative;
+                                  cursor: pointer;
+                                  margin: 0;
+                                }
+                                        .coogie a{
+          cursor: pointer;
+          background-color: transparent;
+          color: transparent;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+          width: 63px;
+          height: 69px;
+          }
+          .coogie:hover{
+            background-image: url(https://64.media.tumblr.com/21c8ab4ab5d5e012d81e833e25daf643/c045d28d972dd8e7-61/s75x75_c1/f1d381568d43dd330019b9bcf46518b7c338e18a.pnj);
+            background-color: transparent;
+            transition: 0.3s ease-in-out;
+            color: transparent;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            width: 63px;
+            height: 69px;
+            }
+            .kunst{
+                                  background-color: pink;
+                                  border: 1px solid black;
+                                  width: 63px;
+                                  height: 69px;
+                                  line-height: 20px;
+                                  font-size: 15px;
+                                  justify-content: center;
+                                  align-items: center;
+                                  text-align: center;
+                                  position: relative;
+                                  cursor: pointer;
+                                  margin: 0;
+                                }
+                                        .kunst a{
+          cursor: pointer;
+          background-color: transparent;
+          color: transparent;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+          width: 63px;
+          height: 69px;
+          }
+          .kunst:hover{
+            background-image: url(https://64.media.tumblr.com/6029f3c8ff9969f6e8ef6fce7f04a9aa/c045d28d972dd8e7-9f/s75x75_c1/10b9184dd68c99318ae808450d5a46cbf1528218.pnj);
+            background-color: transparent;
+            transition: 0.3s ease-in-out;
+            color: transparent;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            width: 63px;
+            height: 69px;
+            }
+            .loopy{
+                                  background-color: pink;
+                                  border: 1px solid black;
+                                  width: 63px;
+                                  height: 69px;
+                                  line-height: 20px;
+                                  font-size: 15px;
+                                  justify-content: center;
+                                  align-items: center;
+                                  text-align: center;
+                                  position: relative;
+                                  cursor: pointer;
+                                  margin: 0;
+                                }
+                                        .loopy a{
+          cursor: pointer;
+          background-color: transparent;
+          color: transparent;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+          width: 63px;
+          height: 69px;
+          }
+          .loopy:hover{
+            background-image: url(https://64.media.tumblr.com/7a9c3ddb645982669c85635d2e765d03/c045d28d972dd8e7-06/s75x75_c1/2d5f2978da86c32d35218e170316c7b57b658307.pnj);
+            background-color: transparent;
+            transition: 0.3s ease-in-out;
+            color: transparent;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            width: 63px;
+            height: 69px;
+            }
+            .zico{
+                                  background-color: pink;
+                                  border: 1px solid black;
+                                  width: 63px;
+                                  height: 69px;
+                                  line-height: 20px;
+                                  font-size: 15px;
+                                  justify-content: center;
+                                  align-items: center;
+                                  text-align: center;
+                                  position: relative;
+                                  cursor: pointer;
+                                  margin: 0;
+                                }
+                                        .zico a{
+          cursor: pointer;
+          background-color: transparent;
+          color: transparent;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+          width: 63px;
+          height: 69px;
+          }
+          .zico:hover{
+            background-image: url(https://64.media.tumblr.com/bd6633c40627952486ff3e0e7060d155/c045d28d972dd8e7-ce/s75x75_c1/036f2e0affe182636a63fd6d55078a8abaacf142.pnj);
+            background-color: transparent;
+            transition: 0.3s ease-in-out;
+            color: transparent;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            width: 63px;
+            height: 69px;
+            }
+            .zilla{
+                                  background-color: pink;
+                                  border: 1px solid black;
+                                  width: 63px;
+                                  height: 69px;
+                                  line-height: 20px;
+                                  font-size: 15px;
+                                  justify-content: center;
+                                  align-items: center;
+                                  text-align: center;
+                                  position: relative;
+                                  cursor: pointer;
+                                  margin: 0;
+                                }
+                                        .zilla a{
+          cursor: pointer;
+          background-color: transparent;
+          color: transparent;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+          width: 63px;
+          height: 69px;
+          }
+          .zilla:hover{
+            background-image: url(https://64.media.tumblr.com/241cb08e36c70b48e4f819841d7e61ed/c045d28d972dd8e7-98/s75x75_c1/1726adf73490b763e515d68255c68fc9c4bb8a95.pnj);
+            background-color: transparent;
+            transition: 0.3s ease-in-out;
+            color: transparent;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            width: 63px;
+            height: 69px;
+            }
+
+
+  </style> 
+ </head> 
+ <body> 
+  <div class="friendsblock"> 
+   <marquee behavior="scroll" direction="left">
+   <div class="image-container"> 
+    <div class="image-wrapper"> 
+     <div class="hyolyn"> <a href="#">hyolyn</a> 
+     </div> 
+     <div class="sikk"> <a href="#">sik-k</a> 
+     </div> 
+     <div class="jvcki"> <a href="#">jvcki</a> 
+     </div> 
+     <div class="dayday"> <a href="#">day<br>day</a> 
+     </div> 
+     <div class="jessi"> <a href="#">jessi</a> 
+     </div> 
+     <div class="nafla"> <a href="#">nafla</a> 
+     </div> 
+     <div class="leehi"> <a href="#">leehi</a> 
+     </div> 
+     <div class="hoody"> <a href="#">hoody</a> 
+     </div> 
+     <div class="sogumm"> <a href="#">sogumm</a> 
+     </div> 
+     <div class="coogie"> <a href="#">coogie</a> 
+     </div> 
+     <div class="kunst"> <a href="#">kunst</a> 
+     </div> 
+     <div class="loopy"> <a href="#">loopy</a> 
+     </div> 
+     <div class="zico"> <a href="#">zico</a> 
+     </div> 
+     <div class="zilla"> <a href="#">zilla</a> 
+     </div> 
+    </div> 
+   </div> 
+        </marquee>
+  </div> 
+ 
+</body></html>
